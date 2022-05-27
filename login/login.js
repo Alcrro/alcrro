@@ -3,14 +3,31 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-app.set('view engine', 'ejs');
-app.set('views', 'views')
+const mongoConnect = require('./util/database').mongoConnect;
 
-const indexRoutes = require('./routes/login');
+app.set('view engine', 'ejs');
+
+const loginRoutes = require('./routes/loginRoutes');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, './public')))
 
-app.use(indexRoutes);
+const viewspath = path.join(__dirname,'../public_html/views');
+app.set("views", viewspath);
 
-app.listen(3000);
+app.use((req,res,next) => {
+	// userInfo.findById(1)
+	// .then(user => {
+	// 	req.user = user;
+	// 	next()
+ 	// })
+	//  .catch(err => console.log(err));
+	 next();
+})
+
+app.use(loginRoutes);
+
+mongoConnect(() => {
+  app.listen(3000);
+});
+
