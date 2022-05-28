@@ -4590,7 +4590,10 @@ background: linear-gradient(to right,#4a60c1 10%,#4a60c1);
 
 }
 
-
+.link-logo{
+	text-decoration: none;
+	color: #0275d8;
+}
 
 .card .title{
 
