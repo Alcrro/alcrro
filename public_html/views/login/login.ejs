@@ -1,8 +1,43 @@
 <%- include('../includes/head.ejs') %>
+
+
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/login.css">
+
+
 
 <body>
 <%- include('../includes/navigation.ejs') %>
 
+<div class="container">
+	<div class="auth-panel">
+		<div class="auth-panel-header"><h1>Salut!</h1></div>
+		<div class="auth-panel-body">
+			<form name="user_login" method="post">
+				<div class="form-group">
+					<label for="user_login_email" class="auth-label-email" class="required">Introdu adresa de email</label>
+					<input type="email" id="user_login_email" name="user_login[email]" value="" class="auth-input-email" class="required">
+				</div>
+				<div class="form-group">
+					<button type="submit" id="user_login_continue" name="user_login[continue]"	class="btn-primary auth-btn">Continua</button>
+				</div>
+			</form>
+			<div class="login-text">Nu ai cont? <br> Poti crea unul la pasul urmator</div>
+			<div class="text-muted mt-sm">
+				<div class="text-hr-line">
+					<span>sau</span>
+				</div>
+				<div>intra in cont cu</div>
+			</div>
+			<div class="social-text">
+				<a href="/" class="btn btn-social google mt-md">Google</a>
+				<a href="/" class="btn btn-social facebook mt-md">Facebook</a>
+			</div>
+		</div>
+	</div>
+	<div class="auth-help">
+		<a href="/" class="auth-link-help">Ai Nevoie de ajutor?</a>
+	</div>
+</div>
 
 <%- include('../includes/end.ejs') %>

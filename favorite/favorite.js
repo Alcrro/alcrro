@@ -13,6 +13,4 @@ app.use(express.static(path.join(__dirname, './public')))
 
 app.use(indexRoutes);
 
-// rest
-
 app.listen(3000);

@@ -3543,3 +3543,609 @@ Error: Could not find matching close tag for "<%=".
     at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
     at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
     at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+Error: Failed to lookup view "layouts/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "layouts/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "layouts/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "layouts/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: Failed to lookup view "index/index" in views directory "views"
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/response.js:1039:7)
+    at /home/alcrroro/index/controllers/index.js:6:11
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('../content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "../content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('../content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "../content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:8
+    6| 	<body>
+    7| 		
+ >> 8|     <%- include('./includes/navigation.ejs') %>
+    9| 
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+
+Could not find the include file "./includes/navigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":13:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:8
+    6| 	<body>
+    7| 		
+ >> 8|     <%- include('./includes/navigation.ejs') %>
+    9| 
+    10| 	<main>
+    11| 			<%- include('./includes/leftnavigation.ejs') %>
+
+Could not find the include file "./includes/navigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":13:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:8
+    6| 	<body>
+    7| 		
+ >> 8|     <%- include('./includes/navigation.ejs') %>
+    9| 
+    10| 	<main>
+    11| 			<%- include('./includes/leftnavigation.ejs') %>
+
+Could not find the include file "./includes/navigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":13:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:11
+    9| 
+    10| 	<main>
+ >> 11| 			<%- include('./includes/leftnavigation.ejs') %>
+    12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+
+Could not find the include file "./includes/leftnavigation.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":16:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "./content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('../content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "../content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('./content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "./content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('./public_html/views/content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "./public_html/views/content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('/public_html/views/content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+ENOENT: no such file or directory, open '/public_html/views/content/headcontent.ejs'
+    at Object.openSync (node:fs:585:3)
+    at Object.readFileSync [as fileLoader] (node:fs:453:35)
+    at fileLoader (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:293:18)
+    at handleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:233:16)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:323:10)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('../public_html/views/content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "../public_html/views/content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('../views/content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "../views/content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('../views/content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "../views/content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
+Error: /home/alcrroro/public_html/views/index/index.ejs:12
+    10| 	<main>
+    11| 			<%- include('../includes/leftnavigation.ejs') %>
+ >> 12| 			<%- include('../content/headcontent.ejs') %>
+    13| 
+    14| 			<% if(prods.length > 0) { %>
+    15| 				<div class="items-container">
+
+Could not find the include file "../content/headcontent.ejs"
+    at getIncludePath (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:185:13)
+    at includeFile (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:311:19)
+    at include (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:701:16)
+    at eval ("/home/alcrroro/public_html/views/index/index.ejs":19:17)
+    at index (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/alcrroro/nodevenv/index/16/lib/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/alcrroro/nodevenv/index/16/lib/node_modules/express/lib/application.js:609:3)
