@@ -189,6 +189,7 @@ body{
 		border-radius: 21px;
 		border: 1px solid #d5dee6;
 		padding: 6px 35px 6px 10px;
+		margin-top: 10px;
 	}
 	
 	.auth-btn{
