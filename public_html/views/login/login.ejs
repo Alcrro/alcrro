@@ -13,15 +13,21 @@
 	<div class="auth-panel">
 		<div class="auth-panel-header"><h1>Salut!</h1></div>
 		<div class="auth-panel-body">
-			<form name="user_login" method="post">
+			<form name="user_login" action="/login" method="post">
 				<div class="auth-form-group">
 					<label for="user_login_email" class="auth-label-email" class="required">Introdu adresa de email</label>
 					<input type="email" id="user_login_email" name="user_login[email]" value="" class="auth-input-email" class="required">
 				</div>
 				<div class="auth-form-group">
+					<label for="user_login_email" class="auth-label-email" class="required">Introdu parola</label>
+					<input type="password" id="user_login_password" name="user_login[email]" value="" class="auth-input-email" class="required">
+				</div>
+				<div class="auth-form-group">
 					<button type="submit" id="user_login_continue" name="user_login[continue]"	class="btn-primary auth-btn">Continua</button>
 				</div>
 			</form>
+			<div class="auth-text-hr-line">
+			</div>
 			<div class="auth-login-text">Nu ai cont? <br> Poti crea unul la pasul urmator</div>
 			<div class="text-muted mt-sm">
 				<div class="auth-text-hr-line">

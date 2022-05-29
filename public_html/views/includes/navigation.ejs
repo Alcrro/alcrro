@@ -1,3 +1,8 @@
+<%- include('../includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/navigation.css">
+
+<body>
 <header class="main-header">
 
   <div class="main-container-outer">
@@ -32,19 +37,29 @@
 
 						<div class="btn-group navbar-toolbox-wrapper">
 
-							<div class="btn-group">
+							<div class="btn-group dropdown">
 
-								<a href="/login" class="btn btn-link navbar-main-btn">
+								<a href="/login" class="btn btn-link navbar-main-btn dropbtn">
 
 									<i class='bx bx-user navbar-icon' ></i>
 
-									<span class="visible-lg-line">My Account
+									<span class="visible-lg-line dropbtn">My Account
 
 										<i class="caret"></i>
 
 									</span>
-
 								</a>
+
+								<div class="dropdown-content">
+									<span class="dropdown-text">Intra in cel mai smecher Cont, ca sa iti gasesti habar nu stu</span>
+
+									<a href="/" class="dropdown-link">Intra in Cont</a>
+
+									<a href="/" class="dropdown-link">Inregistreaza un Cont</a>
+
+									<a href="/" class="dropdown-link">Iesire Cont</a>
+								</div>
+								
 
 							</div>
 
