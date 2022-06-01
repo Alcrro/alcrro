@@ -39,7 +39,7 @@
 
 							<div class="btn-group dropdown">
 
-								<a href="/login" class="btn btn-link navbar-main-btn dropbtn">
+								<a href="#" class="btn btn-link navbar-main-btn dropbtn">
 
 									<i class='bx bx-user navbar-icon' ></i>
 
@@ -52,18 +52,24 @@
 
 								<div class="dropdown-content">
 									<span class="dropdown-text">Intra in cel mai smecher Cont, ca sa iti gasesti habar nu stu</span>
-
-									<a href="/" class="dropdown-link">Intra in Cont</a>
-
-									<a href="/" class="dropdown-link">Inregistreaza un Cont</a>
-
-									<a href="/" class="dropdown-link">Iesire Cont</a>
-
+									
+									<% if(!isAuthenticated) { %>
+									<a href="/login" class="dropdown-link">Intra in Cont</a>
+									<a href="/signup" class="dropdown-link">Inregistreaza un Cont</a>
+									<!-- <a href="/logout" class="dropdown-link">Iesire Cont</a> -->
+									<% } else { %>
+										<a href="/user-settings" class="dropdown-link">Setari Cont</a>
+										<a href="/add-product" class="dropdown-link">Adauga Produs</a>
+									<form action="/logout" method="post">
+										<button type="submit" class="dropdown-link">Logout</button>
+									</form>
+									<% } %>
+									
 								</div>
 								
 
 							</div>
-
+							
 							<div class="btn-group">
 
 								<a href="/favorite" class="btn btn-link navbar-main-btn">
@@ -79,7 +85,7 @@
 								</a>
 
 							</div>
-
+							
 							<div class="btn-group">
 
 								<a href="/myCart" class="btn btn-link navbar-main-btn btn-myCart">
