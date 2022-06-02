@@ -2370,6 +2370,14 @@ border: 1px solid black;
 
 {
 
+	.listing-panel-footer{
+
+		display: inline-block;
+
+		
+
+	}
+
 	.listing-sorting-dropdown .in{
 
 		display: block;
@@ -2402,7 +2410,7 @@ border: 1px solid black;
 
 		background: white;
 
-		width: 202px;
+		width: 210px;
 
 		z-index: 10;
 
@@ -2422,7 +2430,7 @@ border: 1px solid black;
 
 		background: white;
 
-		width: 202px;
+		width: 210px;
 
 		z-index: 10;
 
@@ -2431,18 +2439,6 @@ border: 1px solid black;
 		border: 1px solid #666666;
 
 		border-top: 0;
-
-	}
-
-	.listing-sorting-dropdown li{
-
-		display: block;
-
-	}	
-
-	.listing-sorting-dropdown2 li{
-
-		display: block;
 
 	}
 
@@ -2561,6 +2557,10 @@ border: 1px solid black;
 
 	}
 
+	.page-container{
+		width: 100%;
+	}
+
 	
 
 	.items-filter-container{
@@ -2580,14 +2580,7 @@ border: 1px solid black;
 		/* width: 740px; */
 
 		max-width: 80rem;
-
-
-
 }
-
-
-
-
 
 	.main-items-container
 

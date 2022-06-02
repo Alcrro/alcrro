@@ -98,5 +98,18 @@ removeAButton.addEventListener('click', function(){
 
 })
 
+const checkboxDropdown = document.getElementById('.list1')
+const checkboxDropdownList = document.querySelector('.items')
+
+checkboxDropdown.addEventListener('click', function(){
+	checkboxDropdownList.classList.toggle('visible')
+});
 
 
+const checkList = document.getElementById('list1');
+checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+  if (checkList.classList.contains('visible'))
+    checkList.classList.remove('visible');
+  else
+    checkList.classList.add('visible');
+}
