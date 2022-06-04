@@ -1,11 +1,13 @@
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
+const app = express();
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 
-const app = express();
+// const User = require('./models/user');
+const User = require('../signup/models/user');
 
 app.set('view engine', 'ejs');
 
@@ -17,26 +19,30 @@ const StoreSession = new MongoDBStore({
 });
 
 
-const indexRoutes = require('../index/routes/indexRoute');
+
+const signupRoutes = require('../signup/routes/signupRoutes');
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, '../public')));
-app.use(session({secret: 'my secret', resave: false, saveUninitialized: false, store: StoreSession}));
+app.use(express.static(path.join(__dirname, '../public')))
+app.use(session({secret: 'my secret', resave: false, saveUninitialized: false, store: StoreSession}))
 
 const viewspath = path.join(__dirname,'../public_html/views');
 app.set("views", viewspath);
 
-// app.use((req,res,next) => {
-// 	// userInfo.findById(1)
-// 	// .then(user => {
-// 	// 	req.user = user;
-// 	// 	next()
-//  	// })
-// 	//  .catch(err => console.log(err));
-// 	 next();
-// })
 
-app.use(indexRoutes);
+app.use((req, res, next) => {
+  if (!req.session.user) {
+    return next();
+  }
+  User.findById(req.session.user._id)
+    .then(user => {
+      req.user = user;
+      next();
+    })
+    .catch(err => console.log(err));
+});
+
+app.use(signupRoutes);
 
 mongoose.connect(MONGODB_URI)
 .then(result =>{
@@ -45,3 +51,5 @@ mongoose.connect(MONGODB_URI)
 }).catch(err => {
 	console.log(err);
 })
+
+

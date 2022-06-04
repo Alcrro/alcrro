@@ -10468,13 +10468,13 @@ node:internal/modules/cjs/loader:936
 
 Error: Cannot find module 'express'
 Require stack:
-- /home/alcrroro/login/login.js
+- /home/alcrroro/signup/signup.js
 - /usr/local/lsws/fcgi-bin/lsnode.js
     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/home/alcrroro/login/login.js:2:17)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:2:17)
     at Module._compile (node:internal/modules/cjs/loader:1105:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
     at Module.load (node:internal/modules/cjs/loader:981:32)
@@ -10482,7 +10482,7 @@ Require stack:
     at Module.require (node:internal/modules/cjs/loader:1005:19) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/alcrroro/login/login.js',
+    '/home/alcrroro/signup/signup.js',
     '/usr/local/lsws/fcgi-bin/lsnode.js'
   ]
 }
@@ -10492,13 +10492,13 @@ node:internal/modules/cjs/loader:936
 
 Error: Cannot find module 'express'
 Require stack:
-- /home/alcrroro/login/login.js
+- /home/alcrroro/signup/signup.js
 - /usr/local/lsws/fcgi-bin/lsnode.js
     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/home/alcrroro/login/login.js:2:17)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:2:17)
     at Module._compile (node:internal/modules/cjs/loader:1105:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
     at Module.load (node:internal/modules/cjs/loader:981:32)
@@ -10506,7 +10506,7 @@ Require stack:
     at Module.require (node:internal/modules/cjs/loader:1005:19) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/alcrroro/login/login.js',
+    '/home/alcrroro/signup/signup.js',
     '/usr/local/lsws/fcgi-bin/lsnode.js'
   ]
 }
@@ -10514,15 +10514,15 @@ node:internal/modules/cjs/loader:936
   throw err;
   ^
 
-Error: Cannot find module 'express'
+Error: Cannot find module '../signup/routes/loginRoutes'
 Require stack:
-- /home/alcrroro/login/login.js
+- /home/alcrroro/signup/signup.js
 - /usr/local/lsws/fcgi-bin/lsnode.js
     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/home/alcrroro/login/login.js:2:17)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
     at Module._compile (node:internal/modules/cjs/loader:1105:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
     at Module.load (node:internal/modules/cjs/loader:981:32)
@@ -10530,7 +10530,7 @@ Require stack:
     at Module.require (node:internal/modules/cjs/loader:1005:19) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/alcrroro/login/login.js',
+    '/home/alcrroro/signup/signup.js',
     '/usr/local/lsws/fcgi-bin/lsnode.js'
   ]
 }
@@ -10538,15 +10538,15 @@ node:internal/modules/cjs/loader:936
   throw err;
   ^
 
-Error: Cannot find module 'express'
+Error: Cannot find module '../signup/routes/loginRoutes'
 Require stack:
-- /home/alcrroro/login/login.js
+- /home/alcrroro/signup/signup.js
 - /usr/local/lsws/fcgi-bin/lsnode.js
     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/home/alcrroro/login/login.js:2:17)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
     at Module._compile (node:internal/modules/cjs/loader:1105:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
     at Module.load (node:internal/modules/cjs/loader:981:32)
@@ -10554,7 +10554,7 @@ Require stack:
     at Module.require (node:internal/modules/cjs/loader:1005:19) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/alcrroro/login/login.js',
+    '/home/alcrroro/signup/signup.js',
     '/usr/local/lsws/fcgi-bin/lsnode.js'
   ]
 }
@@ -10562,15 +10562,15 @@ node:internal/modules/cjs/loader:936
   throw err;
   ^
 
-Error: Cannot find module 'express'
+Error: Cannot find module '../signup/routes/loginRoutes'
 Require stack:
-- /home/alcrroro/login/login.js
+- /home/alcrroro/signup/signup.js
 - /usr/local/lsws/fcgi-bin/lsnode.js
     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/home/alcrroro/login/login.js:2:17)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
     at Module._compile (node:internal/modules/cjs/loader:1105:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
     at Module.load (node:internal/modules/cjs/loader:981:32)
@@ -10578,7 +10578,7 @@ Require stack:
     at Module.require (node:internal/modules/cjs/loader:1005:19) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/alcrroro/login/login.js',
+    '/home/alcrroro/signup/signup.js',
     '/usr/local/lsws/fcgi-bin/lsnode.js'
   ]
 }
@@ -10586,15 +10586,15 @@ node:internal/modules/cjs/loader:936
   throw err;
   ^
 
-Error: Cannot find module 'express'
+Error: Cannot find module '../signup/routes/loginRoutes'
 Require stack:
-- /home/alcrroro/login/login.js
+- /home/alcrroro/signup/signup.js
 - /usr/local/lsws/fcgi-bin/lsnode.js
     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/home/alcrroro/login/login.js:2:17)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
     at Module._compile (node:internal/modules/cjs/loader:1105:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
     at Module.load (node:internal/modules/cjs/loader:981:32)
@@ -10602,7 +10602,7 @@ Require stack:
     at Module.require (node:internal/modules/cjs/loader:1005:19) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/alcrroro/login/login.js',
+    '/home/alcrroro/signup/signup.js',
     '/usr/local/lsws/fcgi-bin/lsnode.js'
   ]
 }
@@ -10610,15 +10610,15 @@ node:internal/modules/cjs/loader:936
   throw err;
   ^
 
-Error: Cannot find module 'express'
+Error: Cannot find module '../signup/routes/loginRoutes'
 Require stack:
-- /home/alcrroro/login/login.js
+- /home/alcrroro/signup/signup.js
 - /usr/local/lsws/fcgi-bin/lsnode.js
     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/home/alcrroro/login/login.js:2:17)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
     at Module._compile (node:internal/modules/cjs/loader:1105:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
     at Module.load (node:internal/modules/cjs/loader:981:32)
@@ -10626,7 +10626,271 @@ Require stack:
     at Module.require (node:internal/modules/cjs/loader:1005:19) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/alcrroro/login/login.js',
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '../signup/routes/loginRoutes'
+Require stack:
+- /home/alcrroro/signup/signup.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/alcrroro/signup/signup.js:23:22)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/alcrroro/signup/signup.js',
     '/usr/local/lsws/fcgi-bin/lsnode.js'
   ]
 }

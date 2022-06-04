@@ -7,6 +7,7 @@ const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 
 // const User = require('./models/user');
+const User = require('../login/models/user');
 
 app.set('view engine', 'ejs');
 
@@ -19,25 +20,27 @@ const StoreSession = new MongoDBStore({
 
 
 
-const loginRoutes = require('./routes/loginRoutes');
+const loginRoutes = require('../login/routes/loginRoutes');
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, './public')))
+app.use(express.static(path.join(__dirname, '../public')))
 app.use(session({secret: 'my secret', resave: false, saveUninitialized: false, store: StoreSession}))
 
 const viewspath = path.join(__dirname,'../public_html/views');
 app.set("views", viewspath);
 
 
-// app.use((req,res,next) => {
-// 	// User.findById('627dbc1470acb15f825ae0b1')
-// 	// .then(user => {
-// 	// 	req.user = user;
-// 	// 	next();
-//  	// })
-// 	//  .catch(err => console.log(err));
-// 	next();
-// })
+app.use((req, res, next) => {
+  if (!req.session.user) {
+    return next();
+  }
+  User.findById(req.session.user._id)
+    .then(user => {
+      req.user = user;
+      next();
+    })
+    .catch(err => console.log(err));
+});
 
 app.use(loginRoutes);
 
