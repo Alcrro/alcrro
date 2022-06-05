@@ -1,4 +1,5 @@
 const bcrypt = require('bcryptjs');
+const session = require('express-session');
 const User = require('../models/user');
 
 exports.getSignup = (req, res, next) => {
@@ -29,8 +30,10 @@ exports.postLogin = (req, res, next) => {
 			if(doMatch){
 				req.session.isLoggedIn = true;
 				req.session.user = user;
+				req.session.email = email;
+				console.log(`User-ul cu email-ul: ${email} , s-a logat pe site`);
 				return req.session.save(err => {
-					console.log(err);
+					res.setHeader('Set-Cookie', 'looggedIn=True; Secure')
 					res.redirect('/');
 				})
 			};
@@ -44,12 +47,12 @@ exports.postLogin = (req, res, next) => {
 	})
 };
 
-exports.postLogout = (req, res, next) => {
-  req.session.destroy(err => {
-    console.log(err);
-    res.redirect('/');
-  });
-};
+// exports.postLogout = (req, res, next) => {
+//   req.session.destroy(err => {
+//     console.log(err);
+//     res.redirect('/');
+//   });
+// };
 
 exports.postSignup = (req,res,next) => {
 	const authUserLoginEmail = req.body.email;

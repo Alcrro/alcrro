@@ -1,0 +1,50 @@
+<%- include('../includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="/css/add-product.css">
+
+
+
+<body>
+
+	<%- include('../includes/navigation.ejs') %>
+
+	<main>
+	<div class="add-product-container">
+		<div class="add-product-panel">
+			<div class="add-product-panel-header"><h1>Salut!</h1></div>
+			<div class="add-product-panel-body">
+				<form name="" action="/admin/add-product" method="POST">
+					<div class="add-product-form-group">
+						<label for="title" class="">Din ce categorie face parte produsul tau?</label>
+
+						<li class="li-choose-category-of-product">
+							<button class="btn-choose-category-of-product" type="button" id="">
+								<span class="">Alege Categoria</span>
+							</button>
+							
+							<div class="add-product-listing-sorting-dropdown" id="js-sorting-collapse">
+								
+									<ul class="ul-dropdown-menu">
+										<div class="test">
+											<% if(prods.length > 0) { %>
+											<li class="li-product-listing-sorting-dropdown">
+												<% for(let product of prods) { %>
+												<a href="#" class="a-product-listing-sorting-dropdown" data-id="Most Popular"><%= product.name %></a>
+												<% } %>
+											</li>
+										</div>
+									</ul>
+								<% } %>
+								
+						
+					</div>
+					<div class="btn-submit-add-product">
+						<button type="submit" id="" name=""	class="btn-primary auth-btn">Continua</button>
+					</div>
+	</div>
+	</main>
+
+	
+	<%- include('../includes/end.ejs') %>

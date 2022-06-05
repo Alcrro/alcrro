@@ -7,13 +7,12 @@ const productSchema = new Schema({
 		type: String,
 		required: true
 	},
-	age: {
-		type: Number,
-		required: true
-	}
+	
 });
 
-module.exports = mongoose.model('categoryProduct', productSchema);
+module.exports = mongoose.model('ProductAdminDescription', productSchema);
+
+
 
 
 

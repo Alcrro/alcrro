@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/login.css">
-<link rel="stylesheet" href="/css/add-product.css">
+<link rel="stylesheet" href="/css/edit-product.css">
 
 
 
@@ -16,9 +16,9 @@
 
 			<div class="auth-container">
 				<div class="auth-panel">
-					<div class="auth-panel-header"><h1>Salut!</h1></div>
+					<div class="auth-panel-header"><h1>Salute!</h1></div>
 					<div class="auth-panel-body">
-						<form name="user_login" action="/login" method="post">
+						<form name="user_login" action="/admin/<% if (editing) { %>edit-product<% } else { %>add-product<% } %>" method="POST">
 							<div class="auth-form-group">
 								<label for="auth-label-user-login-email" class="auth-label-user-login-email">Adauga numele Produsului</label>
 								<input type="text" id="auth-input-user-login-email" name="email" value="" class="auth-input-email">

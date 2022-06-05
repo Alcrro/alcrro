@@ -24,7 +24,14 @@ const loginRoutes = require('../login/routes/loginRoutes');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, '../public')))
-app.use(session({secret: 'my secret', resave: false, saveUninitialized: false, store: StoreSession}))
+app.use(
+  session({
+    secret: "my secret",
+    resave: false,
+    saveUninitialized: false,
+    store: StoreSession,
+  })
+);
 
 const viewspath = path.join(__dirname,'../public_html/views');
 app.set("views", viewspath);
