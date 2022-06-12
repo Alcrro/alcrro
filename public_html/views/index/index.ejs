@@ -1,7 +1,7 @@
 <%- include('../includes/head.ejs') %>
 
-
 	<link rel="stylesheet" href="/css/style.css">
+	<!-- <link rel="stylesheet" href="/css/headcontent.css"> -->
 
 	<body>
 		
@@ -29,13 +29,13 @@
 
 											</div>
 
-											<a href=""><img src="<%= product.imageUrl  %>" alt=""></a>
+											<a href="/products/<%= product._id %>"><img src="<%= product.imageUrl  %>" alt=""></a>
 
 										</div>
 
 										<div class="description-container">
 
-											<a href=""><p><%= product.description %></p>
+											<a href="/products/<%= product._id %>"><p><%= product.description %></p>
 
 											</a>
 

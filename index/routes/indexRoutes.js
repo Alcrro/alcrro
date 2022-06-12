@@ -17,6 +17,7 @@ router.get('/limit/1', indexController.getLimitOne);
 router.get('/limit/2', indexController.getLimitTwo);
 router.get('/limit/3', indexController.getLimitTree);
 router.get('/limit/4', indexController.getLimitFour);
+router.get('/products/:productId', indexController.getProduct);
 
 
 

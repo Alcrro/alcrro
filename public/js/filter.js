@@ -67,6 +67,40 @@ function toggleFilterOrderby2(){
 
 };
 
+const filterButton3 = document.querySelector('#js-sorting-collapse3');
+
+const filterContent3 = document.querySelector('#js-orderby-btn3');
+
+
+
+filterContent3.addEventListener('click', toggleFilterOrderby3);
+
+
+
+function toggleFilterOrderby3(){
+
+	filterButton3.classList.toggle('in')
+
+};
+
+const filterButton4 = document.querySelector('#js-orderby-btn4');
+
+const filterContent4 = document.querySelector('.control-filter-li4');
+const filterButton5 = document.querySelector('#js-orderby-btn5');
+
+
+
+filterContent4.addEventListener('click', toggleFilterOrderby4);
+
+
+
+function toggleFilterOrderby4(){
+
+	filterButton4.classList.toggle('in')
+	filterButton5.classList.toggle('in')
+
+};
+
 
 
 document.addEventListener('click', function handleClickOutsideBox(e){

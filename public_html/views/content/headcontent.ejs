@@ -85,52 +85,29 @@
 				<div class="listing-grid-group-scroller-inner">
 
 					<div class="header-filter-item hidden-xs hidden-sm">
-
+						<div class="name-label">
 						<span class="control-label"> Price:</span>
+						</div>
 
 						<div class="input-group input-group-sm">
 
-							<div class="ph-widget ph-select form-control js-filter-select"><a href="#" class="ph-label">4.000 -  5.000</a>
+							<div class="ph-widget ph-select form-control js-filter-select">
+								<input type="number" min="1500" max="9999" class="input-price-filter" value="1">
+								<span class="input-to-price">-</span>
+								<input type="number" min="1500" max="9999" class="input-price-filter2" value="9999">
+								
+								<a href="#" class="ph-label"></a>
 
 							</div>
 
 							<div class="input-group-btn">
 
-								<button class="btn btn-alt">
-
-
-
-								</button>
 
 							</div>
 
 						</div>
 
 					</div>
-
-					
-
-					<div class="header-filter-item hidden-xs hidden-sm">
-
-						<span class="control-label"> Brand:</span>
-
-						<div class="input-group input-group-sm">
-
-							<div class="ph-widget ph-select form-control js-filter-select"><a href="#" class="ph-label">Asus</a>
-
-							</div>
-
-							<div class="input-group-btn">
-
-								<button class="btn btn-alt">
-
-
-
-								</button>
-
-							</div>
-
-						</div>
 
 						
 
@@ -154,6 +131,48 @@
 
 					<ul class="control-filters">
 
+						<li class="control-filter-li3">
+
+							<button class="btn-filter3" type="button" id="js-orderby-btn3">
+
+								<span class="filter-name orderby-filter">Filter</span>
+
+							</button>
+
+							<div class="listing-sorting-dropdown3" id="js-sorting-collapse3">
+
+							<ul class="dropdown-menu orderby-links">
+
+								<li class="">
+
+									<a href="#" class="orderby-a" data-id="Most Popular">Most Popular</a>
+
+								</li>
+
+								<li class="">
+
+									<a href="#" class="orderby-a" data-id="Newest">Newest</a>
+
+								</li>
+
+								<li class="">
+
+									<a href="/sort-price/asc" class="orderby-a" data-id="Price: Low to high">Price: Low to high</a>
+
+								</li>
+
+								<li class="">
+
+									<a href="/sort-price/desc" class="orderby-a" data-id="Price: high to Low">Price: high to Low</a>
+
+								</li>
+
+							</ul>
+
+							</div>
+
+						</li>
+						
 						<li class="control-filter-li">
 
 							<button class="btn-filter" type="button" id="js-orderby-btn">
@@ -195,30 +214,47 @@
 							</div>
 
 						</li>
+						
+						<li class="control-filter-li4">
+
+							<button class="btn-filter4 in" type="button" id="js-orderby-btn4">
+
+								<i class="fa-solid fa-bars"></i>
+
+							</button>
+
+							<button class="btn-filter5" type="button" id="js-orderby-btn5">
+
+								<i class="fa-solid fa-grid"></i>
+
+							</button>
+						</li>
+
+
 
 						
 
-						<li class="control-filter-li">
+						<li class="control-filter-li2">
 
-							<button class="btn-filter" id="js-orderby-btn2">
+							<button class="btn-filter2" id="js-orderby-btn2">
 
 								<span class="filter-name orderby-filter">Prod/page</span>
 
 							</button>
 
-							<div class="listing-sorting-dropdown" id="js-sorting-collapse2">
+							<div class="listing-sorting-dropdown2" id="js-sorting-collapse2">
 
 								<ul class="dropdown-menu">
 
 									<li class="active">
 
-										<a href="/limit/1" class="short-option">1/page</a>
+										<a href="/limit/1" class="short-option">25/page</a>
 
 									</li>	
 
 									<li class="">
 
-										<a href="/limit/2" class="short-option">2/page</a>
+										<a href="/limit/2" class="short-option">35/page</a>
 
 									</li>	
 
@@ -226,7 +262,7 @@
 
 										<a href="/limit/3" class="short-option">
 
-											3/page
+											50/page
 
 										</a>
 
@@ -234,15 +270,12 @@
 
 									<li class="">
 
-										<a href="/limit/4"class="short-option">4/page</a>
+										<a href="/limit/4"class="short-option">70/page</a>
 
 									</li>
-
-								</ul>
-
-							</div>
-
-						</li>
+									
+									
+					
 
 						
 

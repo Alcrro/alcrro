@@ -10,10 +10,20 @@ const productSchema = new Schema({
 	age: {
 		type: Number,
 		required: true
-	}
+	},
+	userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+	productId: {
+		type: Schema.Types.ObjectId,
+		ref: 'Product',
+		required: true
+	},
 });
 
-module.exports = mongoose.model('categoryProduct', productSchema);
+module.exports = mongoose.model('11Product', productSchema);
 
 
 

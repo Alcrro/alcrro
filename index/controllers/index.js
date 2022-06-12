@@ -16,6 +16,20 @@ exports.getIndex = (req, res, next) => {
     });
 };
 
+exports.getProduct = (req, res, next) => {
+  const prodId = req.params.productId;
+  Product.findById(prodId)
+    .then(product => {
+      res.render('products/product-detail', {
+        product: product,
+        pageTitle: product.title,
+        path: '/products',
+        isAuthenticated: req.session.isLoggedIn
+      });
+    })
+    .catch(err => console.log(err));
+};
+
 exports.getSortAsc = (req, res, next) => {
   Product.find().sort({price: 1})
     .then(products => {

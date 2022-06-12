@@ -1,0 +1,65 @@
+<%- include('../includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/product-details.css">
+
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+			<div class="items-container-details">
+				<div class="container-details">
+					<div class="page-header has-subtitle-info">
+						<div class="breadcrumb-outer-holder">
+							<div class="breadcrumb-inner">
+								<ol class="breadcrumb">
+									<li><a href="">Laptop, Tablete & Telefoane</a>
+									</li>
+									<li><a href="">Telefoane mobile & accesorii</a>
+									</li>
+									<li><a href="">Telefoane Mobile</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<h1 class="page-title"><%= product.title %></h1>
+					</div>
+					<div class="row">
+						<div class="image">
+							<div class="product-gallery-outer">
+								<img src="<%= product.imageUrl %>" alt="<%= product.title %>">
+							</div>
+						</div>
+						<div class="description">
+							<div class="product-highlights-wrapper">
+								<div class="product-highlights-content">
+									<div class="product-highlight">
+										<a href="">test</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="product-highlight product-page-pricing">
+								<form action="">
+									<div class="d-inline-flex justify-space-between w-100">
+										<div class="product-new-price">
+											1.499 lei
+										</div>
+										<div class="ecredit-installment-block text-right hidden-xs">
+											
+										</div>
+									</div>	
+									<% if (isAuthenticated) { %>
+										<%- include('../includes/add-to-cart.ejs', {product: product}) %>
+									<% } %>
+							</form>
+							</div>
+							</div>
+
+						</div>
+					</div>
+							
+						
+				</div>
+			</div>
+        <%- include('../includes/end.ejs') %>
