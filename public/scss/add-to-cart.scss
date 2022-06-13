@@ -1,0 +1,13 @@
+.add-to-cart-btn{
+		border-radius: 5px;
+		color: #fff;
+		/* background: #3985e0; */
+		background: linear-gradient(to right,#4a60c1 10%,#3985e0);
+		width: 200px;
+		height: 30px;
+		cursor: pointer;
+		display: block;
+}
+	.cart-button:hover{
+	background: linear-gradient(to right,#4a60c1 10%,#4a60c1);
+}
