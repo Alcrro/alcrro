@@ -15,82 +15,88 @@
 						<div class="items-container">
 							<% for(let product of prods) { %>
 								
-									<div class="card-container">
+							<div class="card-container">
 
-										<div class="img-container">
+								<div class="img-container">
 
-											<div class="icons-button">
+									<div class="icons-button">
 
-												<i class='bx bx-shopping-bag'></i>
+										<i class='bx bx-shopping-bag'></i>
 
-												<i class='bx bx-heart' ></i>
+										<i class='bx bx-heart' ></i>
 
-												<i class='bx bx-checkbox'></i>
+										<i class='bx bx-checkbox'></i>
 
-											</div>
+									</div>
 
-											<a href="/products/<%= product._id %>"><img src="<%= product.imageUrl  %>" alt=""></a>
+									<a href="/products/<%= product._id %>"><img src="<%= product.imageUrl  %>" alt=""></a>
 
-										</div>
+								</div>
 
-										<div class="description-container">
+								<div class="description-container">
 
-											<a href="/products/<%= product._id %>"><p><%= product.description %></p>
+									<a href="/products/<%= product._id %>"><p><%= product.description %></p>
 
-											</a>
+									</a>
 
-										</div>
+								</div>
 
-										<div class="stars-container">
+								<div class="stars-container">
 
-											<a href="#">
+									<a href="#">
 
-												<span><i class="fa-regular fa-star"></i></span>
+										<span><i class="fa-regular fa-star"></i></span>
 
-												<span><i class="fa-regular fa-star"></i></span>
+										<span><i class="fa-regular fa-star"></i></span>
 
-												<span><i class="fa-regular fa-star"></i></span>
+										<span><i class="fa-regular fa-star"></i></span>
 
-												<span><i class="fa-regular fa-star"></i></span>
+										<span><i class="fa-regular fa-star"></i></span>
 
-												<span><i class="fa-regular fa-star"></i></span>
+										<span><i class="fa-regular fa-star"></i></span>
 
-												<span class="reviews-container">
+										<span class="reviews-container">
 
-												rev
+										rev
 
-											</span>
+									</span>
 
-											</a>
+									</a>
 
-										</div>
+								</div>
 
-										<div class="estimate-placeholder">
+								<div class="estimate-placeholder">
 
-											<div class="semibold font-size-sm text-availability-in_stock">
+									<div class="semibold font-size-sm text-availability-in_stock">
 
-												stock
+										stock
 
-											</div>
+									</div>
 
-										</div>
+								</div>
 
-										<div class="price-container">
+								<div class="price-container">
 
-											<p class="product-price">$ <%= product.price %></p>
+									<p class="product-price">$ <%= product.price %></p>
 
-										</div>
+								</div>
 
-										<div class="button-container">
+								<div class="button-container">
 
-										<button type="submit" class="cart-button">Add To Cart</button>
-
-										</div>
-							</div>
+								<button type="submit" class="cart-button">Add To Cart</button>
+								</div>
+						</div>
 						<% } %>
 				</div>
+				<div class="container-pagination">
+					<%- include('../includes/pagination.ejs', {currentPage: currentPage, nextPage: nextPage, previousPage: previousPage, lastPage: lastPage, hasNextPage: hasNextPage, hasPreviousPage: hasPreviousPage}) %>
+				</div>
+			</div>
+				
+				
 		<% } else { %>
 			<h1>Products not found!</h1>
 		<% } %>
 	</main>
+	
 <%- include('../includes/end.ejs') %>

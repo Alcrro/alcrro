@@ -340,6 +340,7 @@ border: 1px solid black;
 	padding-right: 10px;
 	max-width: 80rem;
 	min-height: 60rem;
+	margin-bottom: 1rem;
 }
 
 .items-container{
@@ -1158,6 +1159,41 @@ border: 1px solid black;
 		width: 100%;
 	}
 
+	.container-pagination{
+		display: block;
+		height: 5rem;
+		width: 60;
+		padding: 0.5rem;
+	}
+
+	.pagination{
+		display: block;
+		text-align: center;
+		height: 3rem;
+		width: 100%;
+		padding: 0.5rem;
+	}
+	
+	.pagination a {
+		text-decoration: none;
+		color: black;
+		padding: 0.5rem;
+		border: 1px solid black;
+		margin: 0 0.5rem;
+	}
+	
+	.li-pagination{
+		display: block;
+		list-style: none;
+	}
+	
+	.pagination a:hover,
+	.pagination a:active,
+	.pagination a.active{
+		background: black;
+		color: #fff;
+	}
+
 	.control-filter-li{
 		display: inline-block;
 		list-style: none;
@@ -1500,6 +1536,15 @@ border: 1px solid black;
 
 @media screen and (min-width: 768px)
 {
+
+	.container-pagination{
+		display: block;
+		position: relative;
+		float: right;
+		height: 2rem;
+		width: 100%;
+	}
+
 	.listing-panel-heading, .listing-panel-body{
 		display: block;
 		text-align: center;
@@ -1510,6 +1555,11 @@ border: 1px solid black;
 	.listing-panel-heading{
 		padding: 10px 0;
 
+	}
+
+	.page-container{
+		display: block;
+		width: 100%;
 	}
 
 
@@ -1669,7 +1719,7 @@ border: 1px solid black;
 	
 	.container {
 		/* width: 740px; */
-		max-width: 60rem;
+		max-width: 80rem;
 
 }
 
@@ -1710,6 +1760,42 @@ border: 1px solid black;
 @media screen and	(min-width: 968px)
 {
 
+	// Start Pagination 
+.container-pagination{
+	display: block;
+	height: 2rem;
+	width: 80rem;
+}
+
+.pagination{
+	display: block;
+	text-align: center;
+	height: 2rem;
+	width: 100%;
+}
+
+.pagination a {
+	text-decoration: none;
+	color: black;
+	padding: 0.5rem;
+	border: 1px solid black;
+	margin: 0 0.5rem;
+}
+
+.li-pagination{
+	display: block;
+	list-style: none;
+	width: 100%;
+}
+
+.pagination a:hover,
+.pagination a:active,
+.pagination a.active{
+	background: black;
+	color: #fff;
+}
+
+// End Pagination 
 	.sidebar-container-body{
 		display: block;
 	}
@@ -1998,9 +2084,23 @@ border: 1px solid black;
 		padding-right: 15px;	
 	}
 
-	.items-container {
+	.container-pagination{
+		display: block;
+		position: relative;
+		float: right;
+		height: 2rem;
+		width: 80%;
+	}
+
+
+	.page-container{
+		display: none;
+		width: 60rem;
+	}
+	
+	main{
+		display: block;
 		width: 100%;
-		float: left;
 	}
 
 
@@ -2214,8 +2314,10 @@ border: 1px solid black;
 	}
 
 	.items-container {
-		width: 100%;
+		display: block;
+		width: 81%;
 		float: left;
+		margin-bottom: 20px;
 	}
 
 	.card-container{
@@ -2884,5 +2986,43 @@ background: linear-gradient(to right,#4a60c1 10%,#4a60c1);
 }
 
 
-
 /* End Sidebar Filters */
+
+// Start Pagination 
+// .container-pagination{
+// 	display: block;
+// 	position: relative;
+// 	float: right;
+// 	height: 2rem;
+// 	width: 80%;
+// }
+
+// .pagination{
+// 	display: block;
+// 	text-align: center;
+// 	height: 2rem;
+// 	width: 100%;
+// }
+
+// .pagination a {
+// 	text-decoration: none;
+// 	color: black;
+// 	padding: 0.5rem;
+// 	border: 1px solid black;
+// 	margin: 0 0.5rem;
+// }
+
+// .li-pagination{
+// 	display: block;
+// 	list-style: none;
+// 	width: 100%;
+// }
+
+// .pagination a:hover,
+// .pagination a:active,
+// .pagination a.active{
+// 	background: black;
+// 	color: #fff;
+// }
+
+// End Pagination 
