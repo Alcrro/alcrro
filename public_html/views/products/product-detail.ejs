@@ -8,6 +8,7 @@
 
     <body>
         <%- include('../includes/navigation.ejs') %>
+				<input type="hidden" name="_csrf" value="<%= csrfToken %>">
 			<div class="items-container-details">
 				<div class="container-details">
 					<div class="page-header has-subtitle-info">

@@ -1,0 +1,7 @@
+{	
+	"env": {
+		"MONGO_USER": "mycula",
+		"MONGO_PASSWORD": "1Samsung95",
+		"MONGO_DEFAULT_DATABASE": "myFirstDatabase"
+	}
+}

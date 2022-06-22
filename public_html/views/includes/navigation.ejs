@@ -54,7 +54,7 @@
 									<span class="dropdown-text">Intra in cel mai smecher Cont, ca sa iti gasesti habar nu stu</span>
 									
 									<% if(!isAuthenticated) { %>
-									<a href="/login" class="dropdown-link">Intra in Cont</a>
+									<a href="/login" class="dropdown-link" >Intra in Cont</a>
 									<a href="/signup" class="dropdown-link">Inregistreaza un Cont</a>
 									<!-- <a href="/logout" class="dropdown-link">Iesire Cont</a> -->
 									<% } else { %>
@@ -62,6 +62,7 @@
 										<a href="/user-settings" class="dropdown-link">Setari Cont</a>
 										<a href="/admin/add-product" class="dropdown-link">Adauga Produs</a>
 									<form action="/logout/" method="post">
+										<input type="hidden" name="_csrf" value="<%= csrfToken %>">
 										<button type="submit" class="dropdown-link">Logout</button>
 									</form>
 									<% } %>

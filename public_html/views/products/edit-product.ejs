@@ -13,7 +13,7 @@
 	<main>
 
 		<form name="" action="/add-product" method="post">
-
+			<input type="hidden" name="_csrf" value="<%= csrfToken %>">
 			<div class="auth-container">
 				<div class="auth-panel">
 					<div class="auth-panel-header"><h1>Salute!</h1></div>
