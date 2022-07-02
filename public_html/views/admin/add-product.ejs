@@ -21,7 +21,9 @@
 
 						<li class="li-choose-category-of-product">
 							<button class="btn-choose-category-of-product" type="button" id="">
-								<span class="">Alege Categoria</span>
+								<% if(prods.length > 0) { %>
+								<span class=""><%= path === '/' ? 'active' : 'Alege Categoria' %></span>
+								<% } %>
 							</button>
 							
 							<div class="add-product-listing-sorting-dropdown" id="js-sorting-collapse">
@@ -31,7 +33,7 @@
 											<% if(prods.length > 0) { %>
 											<li class="li-product-listing-sorting-dropdown">
 												<% for(let product of prods) { %>
-												<a href="#" class="a-product-listing-sorting-dropdown" data-id="Most Popular"><%= product.name %></a>
+												<a href="" class="<%= path === '/' ? 'active' : '' %> a-product-listing-sorting-dropdown" data-sort-id="<%= product.sort %>"><%= product.name %></a>
 												<% } %>
 											</li>
 										</div>

@@ -1,9 +1,9 @@
 const Product = require('../models/product');
+const indexProduct = require('../models/indexProduct');
 // const PDFDocument = require('pdfkit')
 
 
 exports.getIndex = async (req, res, next) => {
-
 	// + - convert to number
 	const page = +req.query.page || 1;
 	const perPage = 10;
@@ -14,8 +14,9 @@ exports.getIndex = async (req, res, next) => {
 		
 		const product = await Product.find()
 		.skip((page - 1) * perPage)
-		.limit(perPage);
+		.limit(perPage)
 
+	
 				res.render('index/index', {
 					prods: product,
 					pageTitle: 'Index',
@@ -28,8 +29,9 @@ exports.getIndex = async (req, res, next) => {
 					nextPage: page + 1,
 					previousPage: page - 1,
 					lastPage: Math.ceil(totalItems / perPage),
-					isAuthenticated: req.session.isLoggedIn
+					isAuthenticated: req.session.isLoggedIn,
 				});
+				
 		}
     catch(err) {
 			if (!err.statusCode){
@@ -38,6 +40,7 @@ exports.getIndex = async (req, res, next) => {
 		next(err);
 	}
 }
+
 
 exports.getProduct = (req, res, next) => {
   const prodId = req.params.productId;
@@ -53,35 +56,82 @@ exports.getProduct = (req, res, next) => {
     .catch(err => console.log(err));
 };
 
-exports.getSortAsc = (req, res, next) => {
-	Product.find().sort({price: 1})
-    .then(products => {
+exports.getSortAsc = async(req, res, next) => {
+	const currPage = +req.query.page || 1;
+	const perPage = 10;
+	let page = req.params.page;
+	let totalItems;
+	let SortAsc = "/sort-priceasc";
+	try{
+		const totalItems = await Product.find()
+		.countDocuments()
+		
+		const product = await Product.find()
+		.skip((page - 1) * perPage)
+		.limit(perPage)
+		.sort({price: 1})
+		// res.send(product)
 			// console.log(products);
       res.render('index/index', {
-        prods: products,
+        prods: product,
         pageTitle: 'Index',
-        path: '/',
+        path: "/sort-priceasc",
+				currentPage: currPage,
+				urlSortAsc: SortAsc,
+				message: 'Fetched posts successfully',
+				totalItems: totalItems,
+				hasNextPage: perPage * currPage < totalItems,
+				hasPreviousPage: currPage > 1,
+				nextPage: currPage + 1,
+				previousPage: currPage - 1,
+				lastPage: Math.ceil(totalItems / perPage),
 				isAuthenticated: req.session.isLoggedIn
       });
-    })
-    .catch(err => {
-      console.log(err);
-    });
+    }
+    catch(err) {
+			if (!err.statusCode){
+				err.statusCode =500
+			}
+		next(err);
+	}
 };
-exports.getSortDesc = (req, res, next) => {
-  Product.find().sort({price: -1})
-    .then(products => {
+ 
+exports.getSortDesc = async(req, res, next) => {
+	const page = +req.query.page || 1;
+	const perPage = 10;
+	let totalItems;
+	try{
+		const totalItems = await Product.find()
+		.countDocuments()
+		
+		const product = await Product.find()
+		.skip((page - 1) * perPage)
+		.limit(perPage)
+		.sort({price: -1})
+		// res.send(product)
 			// console.log(products);
       res.render('index/index', {
-        prods: products,
+        prods: product,
         pageTitle: 'Index',
-        path: '/',
+        path: '/sort-pricedesc',
+				editing: false,
+				currentPage: page,
+				message: 'Fetched posts successfully',
+				totalItems: totalItems,
+				hasNextPage: perPage * page < totalItems,
+				hasPreviousPage: page > 1,
+				nextPage: page + 1,
+				previousPage: page - 1,
+				lastPage: Math.ceil(totalItems / perPage),
 				isAuthenticated: req.session.isLoggedIn
       });
-    })
-    .catch(err => {
-      console.log(err);
-    });
+    }
+    catch(err) {
+			if (!err.statusCode){
+				err.statusCode =500
+			}
+		next(err);
+	}
 };
 
 exports.getLimitOne = (req, res, next) => {
@@ -146,3 +196,56 @@ exports.getLimitFour = (req, res, next) => {
     });
 };
 
+exports.getSortItems = (req,res, next) => {
+	indexProduct.find()
+	.then(sortItems => {
+		res.render('content/headcontent', {
+			sortItem: sortItems,
+			path: "/",
+			editing: false,
+			isAuthenticated: req.session.isLoggedIn,
+		})
+	})
+	.catch(err => {
+		console.log(err);
+	});
+} 
+
+exports.pagination = async (req,res,next) => {
+	//+ - convert to number
+	const currPage = +req.query.page || 1;
+	const perPage = 10;
+	let page = req.params.page;
+	let totalItems;
+	try{
+		const totalItems = await Product.find()
+		.countDocuments()
+		
+	const product = await Product.find()
+	.skip((page - 1) * perPage)
+	.limit(perPage)
+		// res.send(product)
+			res.render('index/index', {
+				prods: product,
+				pageTitle: 'Index',
+				path: '/p:page',
+				currentPage: currPage,
+				message: 'Fetched posts successfully',
+				totalItems: totalItems,
+				hasNextPage: perPage * currPage < totalItems,
+				hasPreviousPage: currPage > 1,
+				nextPage: currPage+1,
+				previousPage: currPage -1,
+				lastPage: Math.ceil(totalItems / perPage),
+				isAuthenticated: req.session.isLoggedIn
+
+			});
+			
+	}
+		catch(err) {
+			if (!err.statusCode){
+				err.statusCode =500
+			}
+		next(err);
+		}
+}
