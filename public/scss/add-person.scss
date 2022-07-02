@@ -1,0 +1,58 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: rgb(238, 238, 238);
+}
+
+form{
+	margin: 0;
+	padding: 0;
+}
+section{
+	margin: 0;
+	padding: 0;
+}
+label{
+	display: block;
+	padding: 1rem;
+	width: 70%;
+	margin: 0 auto;
+}
+input{
+	display: block;
+	padding: 0.2rem;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.addPerson{
+	display: block;
+	padding: 0.5rem;
+	margin: 1rem auto;
+	width: 400px;
+	border: 1px solid black;
+}
+
+@media screen and (min-width:554px) {
+	.addPerson{
+	width: 400px;
+	}
+}
+
+.titleForm{
+	text-align: center;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.btnAddPerson{
+	display: block;
+	margin: 0.5rem auto;
+	padding: 0.3rem;
+	background: white;
+	
+	
+}
+.btnAddPerson:hover{
+	cursor: pointer;
+}

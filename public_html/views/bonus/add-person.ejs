@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" href="/css/add-person.css">
+<section>
+	<div class="addPerson container">
+		<h1 class="titleForm">Adauga persoana noua</h1>
+		<form action="" method="POST">
+			<div class="input nrMarca">
+				<label for="">Introdu numarul de marca</label>
+				<input type="text" name="" id="">
+			</div>
+			<div class="input numeAngajat">
+				<label for="">Introdu numele angajatului</label>
+				<input type="text" name="" id="">
+			</div>
+			<div class="input prenumeAngajat">
+				<label for="">Introdu prenumele angajatului</label>
+				<input type="text" name="" id="">
+			</div>
+			<div class="input liniaAngajat">
+				<label for="">Introdu linia angajatului</label>
+				<input type="text" name="" id="">
+			</div>
+			<input type="hidden" name="_csrf" value="<%= csrfToken %>">
+			<button type="submit" class="btnAddPerson">Adauga</button>
+		</form>
+		
+	</div>
+</section>

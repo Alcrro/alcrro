@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="/css/bonusPeopleList.css">
+
+<table class="tableView">
+	<% if(tbHeader.length > 0) { %>
+  <tr>
+		<% for(let tbHeaders of tbHeader) { %>
+    <th><%= tbHeaders.crt %></th>
+		<th><%= tbHeaders.marca %></th>
+		<th><%= tbHeaders.nume %></th>
+		<th><%= tbHeaders.prenume %></th>
+		<th><%= tbHeaders.linia %></th>
+		<th><%= tbHeaders.data %></th>
+		<th><%= tbHeaders.bonus %></th>
+		<% } %>
+  </tr>
+	<% } %>
+
+  <% if(pepDet.length > 0) { %>
+	<div class="test">
+		<% for(let pepDete of pepDet) { %>
+	<tr>
+		<td><%= pepDete.pepDetId%></td>
+		<td><%= pepDete.marca %></td>
+		<td><%= pepDete.nume %></td>
+		<td><%= pepDete.prenume %></td>
+		<td><%= pepDete.linia %></td>
+		<td><%= pepDete.data %></td>
+		<td><%= pepDete.bonus %></td>
+	</tr>
+	<% } %>
+</div>
+<% } %>
+  
+</table>
