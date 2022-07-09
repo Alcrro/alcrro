@@ -7,7 +7,7 @@ exports.postAddProduct = (req, res, next) => {
       res.render('admin/add-product', {
         prods: products,
         pageTitle: 'Products',
-        path: '',
+        path: '/',
 				isAuthenticated: req.session.isLoggedIn,
       });
     })

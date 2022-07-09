@@ -1,0 +1,64 @@
+<%- include('../includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/add-person.css">
+<link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="/css/add-product.css">
+
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+
+<main>
+
+<div class="add-product-container">
+	<div class="add-product-panel">
+		<div class="add-product-panel-header"><h1>Salut!</h1></div>
+		<div class="add-product-panel-body">
+			<form name="" action="/add-perslist" method="POST">
+				<div class="input date">
+					<label for="" class="labelDate">Introdu data</label>
+					<% if(pepDet.length > 0) { %>
+					<input type="date" name="date" id="date" value="" class="inputDate" disabled >
+					
+					<% } %>
+	
+				</div>
+				<div class="inCheck">
+					<!-- <label for="">Introdu data</label> -->
+					<input type="checkbox" name="checkbox" id="" checked value="" class="inputCheck">
+				</div>
+				<div class="add-product-form-group">
+					<label for="title" class="">Din ce categorie face parte produsul tau?</label>
+
+					<li class="li-choose-category-of-product">
+							<% if(pepDet.length > 0) { %>
+							<input type="text" class="btn-choose-category-of-product jsHolder" >
+							<% } %>
+						
+						<div class="add-product-listing-sorting-dropdown" id="js-sorting-collapse">
+							
+								<ul class="ul-dropdown-menu">
+									<div class="test">
+										<% if(pepDet.length > 0) { %>
+										<li class="li-product-listing-sorting-dropdown jsli">
+											<% for(let product of pepDet) { %>
+											<a href="" class="<%= path === '/add-perslist' ? 'active' : '' %> ajsli a-product-listing-sorting-dropdown" data-id="test"><%= product.marca %></a>
+											<% } %>
+										</li>
+									</div>
+								</ul>
+							<% } %>
+						</div>
+					</li>
+				</div>
+				<div class="btn-submit-add-product">
+					<input type="hidden" name="_csrf" value="<%= csrfToken %>">
+					<button type="submit" id="" name=""	class="btn-primary auth-btn">Continua</button>
+				</div>
+</div>
+		
+	</div>
+</main>
+<script src="/js/add-product.js"></script>
+<%- include('../includes/end.ejs') %>

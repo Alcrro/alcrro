@@ -1,17 +1,36 @@
+<%- include('../includes/head.ejs') %>
 
-<link rel="stylesheet" href="/css/bonusPeopleList.css">
+
+</head>
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+
 
 <table class="tableView">
 	<% if(tbHeader.length > 0) { %>
   <tr>
 		<% for(let tbHeaders of tbHeader) { %>
-    <th><%= tbHeaders.crt %></th>
-		<th><%= tbHeaders.marca %></th>
-		<th><%= tbHeaders.nume %></th>
-		<th><%= tbHeaders.prenume %></th>
-		<th><%= tbHeaders.linia %></th>
-		<th><%= tbHeaders.data %></th>
-		<th><%= tbHeaders.bonus %></th>
+    <th class="thCrt"><%= tbHeaders.crt %></th>
+		<th class="thMarca"><%= tbHeaders.marca %></th>
+		<th class="thNume"><%= tbHeaders.nume %></th>
+		<th class="thPrenume"><%= tbHeaders.prenume %></th>
+		<th class="thLinia"><%= tbHeaders.linia %></th>
+		<th class="thData">
+			<div class="dropdownBonusPeopleList">
+				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+				<span class="caret"></span></button>
+				<% if(monthsList.length > 0) { %>
+				<ul class="ulDropdownMenuBonusPeopleList">
+					<% for(let monthsLists of monthsList) { %>
+					<li><a href="#" class="linkdropdownBonusPeopleList"><%= monthsLists.months %></a></li>
+
+					<% } %>
+				</ul>
+				<% } %>
+			</div>
+		</th>
+		<th class="thBonus"><%= tbHeaders.bonus %></th>
 		<% } %>
   </tr>
 	<% } %>
@@ -20,16 +39,18 @@
 	<div class="test">
 		<% for(let pepDete of pepDet) { %>
 	<tr>
-		<td><%= pepDete.pepDetId%></td>
-		<td><%= pepDete.marca %></td>
-		<td><%= pepDete.nume %></td>
-		<td><%= pepDete.prenume %></td>
-		<td><%= pepDete.linia %></td>
-		<td><%= pepDete.data %></td>
-		<td><%= pepDete.bonus %></td>
+		<td class="tdCrt"><%= pepDete.id %></td>
+		<td class="tdMarca"><%= pepDete.marca %></td>
+		<td class="tdNume"><%= pepDete.nume %></td>
+		<td class="tdPrenume"><%= pepDete.prenume %></td>
+		<td class="tdLinia"><%= pepDete.linia %></td>
+		<td class="tdData"><%= moment(pepDete.createdAt).format("MMMM") %></td>
+		<td class="tdBonus"> RON <%= pepDete.bonus %></td>
 	</tr>
 	<% } %>
 </div>
 <% } %>
   
 </table>
+
+<%- include('../includes/end.ejs') %>

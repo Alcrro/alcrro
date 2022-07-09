@@ -16,18 +16,73 @@ th  {
   text-align: left;
   border-bottom: 1px solid #DDD;
 	text-align: center;
+	background-color: rgb(37, 219, 243);
 }
 td{
 	padding: 8px;
   text-align: left;
   border-left: 1px solid #DDD;
 	text-align: center;
-	
+	cursor: pointer;
+}
+
+.thCrt, .tdCrt{
+	width: 3rem;
+}
+
+.thMarca, .tdMarca{
+	width: 4rem;
+}
+
+.thNume, .tdNume{
+	width: 8rem;
+}
+
+.thPrenume, .tdPrenume{
+	width: 8rem;
+}
+.thLinia, .tdLinia{
+	width: 10rem;
+}
+.thData, .tdData{
+	width: 5rem;
+}
+.thBonus, .tdBonus{
+	width: 8rem;
+}
+
+tr:active {
+	background: red;
 }
 
 tr:nth-child(even) {
-  background-color: rgba(150, 212, 212, 0.4);
+	
+  background-color: rgba(227, 241, 236);
 }
-tr:nth-child(even) {
-  background-color: rgba(150, 212, 212, 0.4);
+tr:nth-child(odd) {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.ulDropdownMenuBonusPeopleList{
+	display: block;
+}
+
+.ulDropdownMenuBonusPeopleList:not(in){
+	display: block;
+}
+
+.linkdropdownBonusPeopleList{
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.ulDropdownMenuBonusPeopleList li{
+	list-style: none;
+
+}
+
+.btn-default{
+	background-color: transparent;
 }

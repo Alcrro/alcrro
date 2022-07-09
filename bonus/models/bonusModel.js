@@ -1,14 +1,24 @@
 
+const { ObjectId, Decimal128 } = require('mongodb');
 const mongoose = require('mongoose');
-
+const autoIncrement = require('mongoose-sequence')(mongoose)
 const Schema = mongoose.Schema;
 
+
 const peopleListSchema = new Schema({
+	id: Number,
 
 	marca: {
 		type: String,
-		required: true
+		required: true,
+		
 	},
+
+	createdAt: {
+		type:	Date,
+		default: new Date,
+	},
+
 	nume: {
 
 		type: String,
@@ -26,14 +36,15 @@ const peopleListSchema = new Schema({
 	},
 	data: {
 	type: String,
-	required: true
+	required: false
 	},
 	bonus: {
-
-	type: String,
+	type: Number,
 	required: true
 	},
 	
-});
+}
 
+);
+peopleListSchema.plugin(autoIncrement)
 module.exports = mongoose.model('peopleList', peopleListSchema);

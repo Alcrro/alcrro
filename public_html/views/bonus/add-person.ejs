@@ -1,28 +1,38 @@
+<%- include('../includes/head.ejs') %>
 
+<link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/add-person.css">
+
+</head>
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+
 <section>
 	<div class="addPerson container">
 		<h1 class="titleForm">Adauga persoana noua</h1>
-		<form action="" method="POST">
+		<form action="/add-person" method="POST">
 			<div class="input nrMarca">
 				<label for="">Introdu numarul de marca</label>
-				<input type="text" name="" id="">
+				<input type="text" name="marca" id="marca" value="">
 			</div>
 			<div class="input numeAngajat">
 				<label for="">Introdu numele angajatului</label>
-				<input type="text" name="" id="">
+				<input type="text" name="nume" id="nume">
 			</div>
 			<div class="input prenumeAngajat">
 				<label for="">Introdu prenumele angajatului</label>
-				<input type="text" name="" id="">
+				<input type="text" name="prenume" id="prenume">
 			</div>
 			<div class="input liniaAngajat">
 				<label for="">Introdu linia angajatului</label>
-				<input type="text" name="" id="">
+				<input type="text" name="linia" id="linia">
 			</div>
 			<input type="hidden" name="_csrf" value="<%= csrfToken %>">
-			<button type="submit" class="btnAddPerson">Adauga</button>
+			<button type="submit" value="submit" class="btnAddPerson">Adauga</button>
 		</form>
 		
 	</div>
 </section>
+
+<%- include('../includes/end.ejs') %>

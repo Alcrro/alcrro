@@ -9,6 +9,7 @@ const isAuth = require('../middleware/is-auth');
 router.get('/list',isAuth, bonusController.peopleList);
 router.get('/add-person',isAuth, bonusController.addPerson);
 router.post('/add-person',isAuth, bonusController.postPerson);
+router.get('/add-perslist',isAuth, bonusController.persList);
 
 
 
