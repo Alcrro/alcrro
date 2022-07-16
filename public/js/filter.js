@@ -1,37 +1,15 @@
-function orderbySelect(){
+const collapseFilter = document.querySelector('.js-collapse-trigger');
 
-const orderbyFilter = document.querySelectorAll('.orderby')
-
-
-
-orderbyFilter.forEach(function(btn){
-
-	btn.addEventListener('click', function(e){
-
-		console.log(e.currentTarget.dataset.id)
-
-	});
-
-});
-
-}
+collapseFilter.addEventListener('click', toggleFilter );
 
 
 
-const filters = document.querySelector('#js-filter-collapse');
-
-// const collapseFilter = document.querySelector('.js-collapse-trigger')
-
-// collapseFilter.addEventListener('click', toggleFilter )
+function toggleFilter(){
 
 
+	filters.classList.toggle('in');
 
-// function toggleFilter(){
-
-
-// 	filters.classList.toggle('in')
-
-// }
+};
 
 
 const filterButton = document.querySelector('#js-sorting-collapse');
@@ -40,15 +18,15 @@ const filterContent = document.querySelector('#js-orderby-btn');
 
 
 
-// filterContent.addEventListener('click', toggleFilterOrderby);
+filterContent.addEventListener('click', toggleFilterOrderby);
 
 
 
-// 	function toggleFilterOrderby(){
+	function toggleFilterOrderby(){
 
-// 		filterButton.classList.toggle('in')
+		filterButton.classList.toggle('in')
 
-// 	};
+	};
 
 
 const filterButton2 = document.querySelector('#js-sorting-collapse2');

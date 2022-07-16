@@ -11,7 +11,6 @@ const peopleListSchema = new Schema({
 	marca: {
 		type: String,
 		required: true,
-		
 	},
 
 	createdAt: {

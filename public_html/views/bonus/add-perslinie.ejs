@@ -1,10 +1,5 @@
 <%- include('../includes/head.ejs') %>
 
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/add-person.css">
-<link rel="stylesheet" href="/css/login.css">
-<link rel="stylesheet" href="/css/add-product.css">
-
 
 <body>
    <%- include('../includes/navigation.ejs') %>
@@ -18,10 +13,10 @@
 			<form name="" action="/add-perslist" method="POST">
 				<div class="input date">
 					<label for="" class="labelDate">Introdu data</label>
-					<% if(pepDet.length > 0) { %>
+					
 					<input type="date" name="date" id="date" value="" class="inputDate" disabled >
 					
-					<% } %>
+		
 	
 				</div>
 				<div class="inCheck">
@@ -29,26 +24,28 @@
 					<input type="checkbox" name="checkbox" id="" checked value="" class="inputCheck">
 				</div>
 				<div class="add-product-form-group">
-					<label for="title" class="">Din ce categorie face parte produsul tau?</label>
+					
 
 					<li class="li-choose-category-of-product">
-							<% if(pepDet.length > 0) { %>
-							<input type="text" class="btn-choose-category-of-product jsHolder" >
-							<% } %>
+							
 						
 						<div class="add-product-listing-sorting-dropdown" id="js-sorting-collapse">
-							
-								<ul class="ul-dropdown-menu">
-									<div class="test">
-										<% if(pepDet.length > 0) { %>
-										<li class="li-product-listing-sorting-dropdown jsli">
-											<% for(let product of pepDet) { %>
-											<a href="" class="<%= path === '/add-perslist' ? 'active' : '' %> ajsli a-product-listing-sorting-dropdown" data-id="test"><%= product.marca %></a>
-											<% } %>
-										</li>
-									</div>
-								</ul>
-							<% } %>
+							<form action="/add-perslist">
+								<input type="search" name="marca" id="marca" class="btn-choose-category-of-product jsHolder" value="" name="jsHolder marca" placeholder="Intodu numarul de marca: ">
+								<% if(marca.length > 0) { %>
+									<ul class="ul-dropdown-menu">
+										<div class="test">
+											
+											<li class="li-product-listing-sorting-dropdown jsli">
+												<% for (let mere of marca) { %>
+												<a href="#" class="<%= path === '/add-perslist' ? 'active' : '' %> ajsli a-product-listing-sorting-dropdown" data-id=""><%= mere.marca %></a>
+												<% } %>
+											</li>
+										</div>
+										<% } %>
+									</ul>
+									
+							</form>
 						</div>
 					</li>
 				</div>
@@ -60,5 +57,36 @@
 		
 	</div>
 </main>
-<script src="/js/add-product.js"></script>
+<script>
+	function _(element){
+		return document.getElementById(element);
+	}
+
+		function fetch_data(parent_element, child_element, type){
+			fetch('/get_dat?type='+type+'&parent_value='+parent_element.value+'')
+			.then(function(response){
+				return response.json();
+			}).then(function(responseData){
+				var html= '';
+
+				if(type == 'load_marca'){
+					html ='<input type="search" class="btn-choose-category-of-product jsHolder" value="" name="jsHolder" placeholder="Intodu numarul de marca: ">'
+				}
+				if(type == 'load_name')
+				{
+					html ='';
+				}
+				for(var count = 0; count <responseData.length; count++){
+					html += '<input type="search" class="btn-choose-category-of-product jsHolder" value="'+responseData[count]+'" name="jsHolder" placeholder="Intodu numarul de marca: ">'+responseData[count]+ ''
+				}
+				child_element.innerHTML = html;
+		});
+	}
+	_('marca').onchange = function(){
+		fetch_data(_('marca'),'load_marca')
+	};
+	_('marca').onchange = function(){
+		fetch_data(_('name'), 'load_name')
+	}
+</script>
 <%- include('../includes/end.ejs') %>

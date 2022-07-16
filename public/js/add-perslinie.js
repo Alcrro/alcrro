@@ -18,9 +18,7 @@ function toggleFilter(){
 
 ajsli.forEach(function(btn){
 	btn.addEventListener('click', function(e){
-		let ajsli = e.currentTarget.dataset.id
-		jsHolder.value = ajsli;
-		chooseDropdownList.classList.remove('in')
+		console.log(e.currentTarget.dataset);
 	})
-})
+});
 

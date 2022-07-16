@@ -1,9 +1,17 @@
+const { response } = require('express');
 const moment = require('moment');
 const { Query } = require('mongoose');
 const bonusModel = require('../models/bonusModel')
-const bonusModel1 = require('../models/bonusModel')
 const bonusTableModel = require('../models/bonusTableModel')
 const monthsList = require('../models/monthsModel')
+const pool = require('../util/MySqlConnection').pool
+
+
+
+const {MongoClient} = require("mongodb");
+
+const client = new MongoClient('mongodb+srv://mycula:1Samsung95@cluster0.giv7z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+client.connect().then(() => console.log("connected to db"));
 
 exports.peopleList = async (req, res, next) => {
 	
@@ -20,6 +28,7 @@ exports.peopleList = async (req, res, next) => {
 					pageTitle: 'Lista oameni',
 					path: '/',
 					moment: moment
+
 				});
 				
 		}
@@ -96,22 +105,25 @@ exports.postPerson =  (req, res, next) => {
 }
 
 
-exports.persList = async (req, res, next) => {
-	
-	try{
 
-		
-		const peopleDetails = await bonusModel.find();
+exports.persList = async (req, res, next) => {
+	try{	
+
+		const inputSearch = req.body.jsHolder
+
 		const tableHeaderList = await bonusTableModel.find()
+
+		const peopleDetails = await bonusModel.find(
+		)
 				res.render('bonus/add-perslinie', {
 					pepDetId: peopleDetails.id + 1,
 					pepDet: peopleDetails,
 					tbHeader: tableHeaderList,
 					pageTitle: 'Adauga Angajat',
 					path: '/add-perslist',
+					moment: moment,
 					isAuthenticated: req.session.isLoggedIn,
-					currentDate: new Date,
-					moment: moment
+					inputSearchs:peopleDetails
 				});
 			}
     catch(err) {
@@ -120,4 +132,196 @@ exports.persList = async (req, res, next) => {
 			}
 		next(err);
 	}
+}
+
+
+
+exports.searchOne = async (req, res, next) => {
+	try{
+		
+		if(req.query.marca){
+			let results;
+			if(req.query.marca.includes(",") || req.query.marca.includes(" ")){
+				let results = await client
+				.db("myFirstDatabase")
+				.collection("peoplelists")
+				.aggregate([
+					{
+						$search: {
+							index: "autocomplete",
+							autocomplete: {
+								query: req.query.marca,
+								path: "marca",
+								fuzzy:{
+									maxEdits: 1,
+								},
+								tokenOrder: "sequential",
+							},
+						},
+					},
+					{
+						$project: {
+							marca: 1,
+							_id: 1,
+							nume: 1,
+						},
+					},
+					{
+						$limit:1,
+					},
+				])
+				.toArray();
+
+				return res.send(results);
+			}
+
+			results = await client
+				.db("myFirstDatabase")
+				.collection("peoplelists")
+				.aggregate([
+					{
+						$search: {
+							index: "autocomplete",
+							autocomplete: {
+								query: req.query.marca,
+								path: "marca",
+								fuzzy:{
+									maxEdits: 1,
+								},
+								tokenOrder: "sequential",
+							},
+						},
+					},
+					{
+						$project: {
+							marca: 1,
+							_id: 1,
+							nume: 1,
+						},
+					},
+					{
+						$limit:1,
+					}
+				])
+				.toArray();
+
+				return res.send(results);
+			}
+			fetch('http://localhost:3000/searchone?marca=' + req.query.marca)
+			then(res => res.json(results))
+			then(
+				res.render('bonus/add-perslinie', {
+					pageTitle: "searchOne",
+					path: "/searchone",
+				})
+			)
+	} catch(error){
+		console.error(error);
+		res.send([]);
+	}
+};
+	
+
+exports.searchtwo = async (req, res, next) => {
+	try{
+		if(req.query.marca){
+			let results;
+			if(req.query.marca.includes(",") || req.query.marca.includes(" ")){
+				let results = await client
+				.db("myFirstDatabase")
+				.collection("peoplelists")
+				.aggregate([
+					{
+						$search: {
+							index: "default",
+							compound: {
+								must:{
+										text:{
+											query: req.query.marca,
+											path: "marca",
+											fuzzy:{
+												maxEdits: 1,
+											},
+										},
+									},
+								},
+							},
+						},
+						{
+							$limit:1,
+						},
+						{
+							$project: {
+								marca: 1,
+								_id: 1,
+								nume: 1,
+							},
+						},
+				])
+				.toArray();
+
+				return res.send(results);
+			}
+
+			results = await client
+				.db("myFirstDatabase")
+				.collection("peoplelists")
+				.aggregate([
+					{
+						$search: {
+							index: "default",
+							compound: {
+								must:{
+										text:{
+											query: req.query.marca,
+											path: "marca",
+											fuzzy:{
+												maxEdits: 1,
+											},
+										},
+									},
+								},
+							},
+						},
+						{
+							$limit:1,
+						},
+						{
+							$project: {
+								marca: 1,
+								_id: 1,
+								nume: 1,
+							},
+						},
+					])
+					.toArray();
+
+					return res.send(results);
+				}
+		res.send([])
+	}
+	catch(error){
+		console.error(error);
+		res.send([])
+	}
+};
+
+
+
+exports.getMarca = async (req, res, next) => {
+	const marca = req.query.marca;
+	let queryMarca = ('Select * from test');
+	try{
+		const resultMarca = await pool.query(queryMarca ,(error,results) =>{
+			res.render('bonus/add-perslinie',{
+				pageTitle: 'test',
+				path: '/add-perslist',
+				marca: results
+			})
+			console.log(results)
+		})
+	}catch(error){
+		next(error)
+	}
+
 }

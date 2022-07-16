@@ -3,5 +3,13 @@
 		"MONGO_USER": "mycula",
 		"MONGO_PASSWORD": "1Samsung95",
 		"MONGO_DEFAULT_DATABASE": "myFirstDatabase"
+	},
+	
+	"env2": {
+		"MYSQL_HOST": "hyperion.hosterion.net",
+		"MYSQL_PORT": "3306",
+		"MYSQL_USER": "alcrroro_guta",
+		"MYSQL_USER_PASSWORD": "1Samsung95",
+		"MYSQL_USER_DEFAULT_DATABASE": "alcrroro_ggga"
 	}
 }
