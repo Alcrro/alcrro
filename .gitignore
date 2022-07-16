@@ -2,5 +2,5 @@ node_modules
 package-lock.json
 package.json
 server.js
-.gitignore
 nodemon.json
+.gitignore
