@@ -1,16 +1,16 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Alexandru Roventa
-=========================================================================================================================================
+Hi there! 👋  
+My name is Alexandru Roventa
+================================
 
-Web Developer
--------------
+💻 Web Developer | 💡 Lifelong Learner
 
-Im a Web developer
+I'm a passionate Web Developer focused on building scalable and performant web applications.
 
-* 🌍  I'm based in Satu Mare, Romania
-* 🖥️  See my portfolio at [My portofoliu](http://alexandru-roventa.ro/projects)
-* ✉️  You can contact me at [alex.roventa94@gmail.com](mailto:alex.roventa94@gmail.com)
-* 🚀  I'm currently working on [e-commerce REST API](http://lucruri-utile.ro)
-* 🧠  I'm learning system design
+- 🌍  Based in **Satu Mare, Romania**
+- 🖥️  Portfolio: [alexandru-roventa.ro/projects](http://alexandru-roventa.ro/projects)
+- 📫  Contact: [alex.roventa94@gmail.com](mailto:alex.roventa94@gmail.com)
+- 🚀  Currently working on: [E-commerce REST API](http://lucruri-utile.ro)
+- 📚  Learning: System Design & Scalable Architecture
 
 <a href="https://www.github.com/alcrro" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/alcrro?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
