@@ -7,7 +7,7 @@ My name is Alexandru Roventa
 
 💻 Web Developer | 💡 Lifelong Learner
 
-I'm a passionate Web Developer focused on building scalable and performant web applications.
+I'm a passionate Web Developer focused on building scalable and high-performance web applications.
 
 - 🌍  Based in **Satu Mare, Romania**
 - 🖥️  Portfolio: [alexandru-roventa.ro/projects](http://alexandru-roventa.ro/projects)
