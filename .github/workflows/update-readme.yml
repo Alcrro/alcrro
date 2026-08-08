@@ -2,8 +2,10 @@ name: Update README from resume.json
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # weekly, Monday 06:00 UTC — resume data rarely changes
+    - cron: "0 6 * * 1"   # weekly fallback, Monday 06:00 UTC
   workflow_dispatch: {}    # manual trigger button in the Actions tab
+  repository_dispatch:
+    types: [resume-updated]   # triggered by alexandruroventa repo on push to resume.json
 
 jobs:
   build-readme:
@@ -17,7 +19,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Fetch resume.json from alexandruroventa repo
         run: |
