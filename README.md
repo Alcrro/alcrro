@@ -1,55 +1,49 @@
 <h1>Hi there, I'm Alexandru Roventa 👋</h1>
 
-Full-Stack Developer / AI SaaS Builder — Tîrgu Jiu, Romania
+Full-Stack Developer · SaaS Products · AI Integration — Satu Mare, Romania
 
-I build and ship SaaS products end-to-end — architecture, backend, frontend, and the AI pipelines that power them. Currently splitting time between two products of my own and freelance/contract work.
+Full-stack developer building and shipping SaaS products end-to-end, independently. Currently running two active products: LearnNoir, an EdTech platform with AI-generated lesson content for schools, and ApexFitness, a gym management SaaS. Open to freelance or remote full-stack roles.
 
-- 🌍 Based in **Tîrgu Jiu, Romania**
-- 🖥️ Portfolio: [alexandru-roventa.ro/projects](http://alexandru-roventa.ro/projects)
+- 🌍 Based in **Satu Mare, Romania**
+- 🖥️ Portfolio: [alcrro.ro](https://alcrro.ro)
 - 📫 Contact: [alex.roventa94@gmail.com](mailto:alex.roventa94@gmail.com)
-- 🎯 Open to freelance / contract full-stack work
+- 🎯 Open to freelance / remote full-stack work
 
 ---
 
-## What I'm building
+## Featured projects
 
-### LearnNoir — AI-powered CS & Math learning platform
-An EdTech platform teaching algorithms, data structures, and math through AI-generated, versioned lesson content instead of static courses.
+### [LearnNoir](https://learn-noir-test.vercel.app) — EdTech platform.
+Most EdTech platforms deliver static content — walls of text or generic exercises. LearnNoir generates structured, interactive lessons via AI, with Cambridge-style lesson design, visual concept maps, and animated visualizations.
 
-- **Stack:** Express 5 + TypeScript (Clean Architecture), React 19, Supabase, Redis, Stripe
-- **AI pipeline:** raw model output → structured lesson blocks, with visualizations via GSAP / Motion Canvas / React Flow / Mafs
-- **Status:** in active development, monetization model defined, working on onboarding + demo flow
+- **Stack:** TypeScript · Express · React · Supabase · Redis · Stripe · AI Pipeline
+- **Impact:** Active EdTech SaaS built and maintained independently. Custom AI pipeline generates structured lesson content (OpenAI). Multi-tenant architecture with organizational accounts for schools. Stripe billing integrated.
+- Repo: [Alcrro/learnNoir-test](https://github.com/Alcrro/learnNoir-test)
 
-### ApexFitness — Gym management SaaS
-B2B software for gym operators: subscriptions, QR-based check-in, multi-role auth (owner/staff/member).
+### [ApexFitness](https://apex-fitness-six.vercel.app) — Gym management SaaS.
+Gym owners juggle separate tools for memberships, payments, and attendance. ApexFitness consolidates all of it — member profiles, subscription billing, and QR check-in — into a single platform.
 
-- **Stack:** MERN, Stripe billing
-- **Focus:** solving operational overhead for gym owners, not a consumer fitness app
-- **Status:** Stripe integration live, deployment architecture in progress (Vercel frontend / Railway backend)
+- **Stack:** MongoDB · Express · React · Node.js · Stripe
+- **Impact:** Full gym management SaaS shipped independently. Stripe payment integration, QR-based member check-in, multi-role authentication. Hybrid cloud deployment (Vercel + Railway).
+- Repo: [Alcrro/apex-fitness](https://github.com/Alcrro/apex-fitness)
+
+## Other projects
+
+- **[web-services-platform](https://alcrro.ro)** — Next.js dashboard for web services management. (TypeScript, Next.js, Prisma) — [repo](https://github.com/Alcrro/web-services-platform)
+- **[alexandruroventa](https://alexandru-roventa.ro)** — Personal full-stack portfolio. (Next.js, TypeScript, MongoDB) — [repo](https://github.com/Alcrro/alexandruroventa)
+- **[AlcrroShop](https://shop.alcrro.ro)** — E-commerce portfolio project. (MongoDB, Express, React) — [repo](https://github.com/Alcrro/alcrro-shop)
 
 ---
-
-## Currently learning
-System design and scalable architecture — applied directly to LearnNoir's AI content pipeline (structured output validation, retry logic, cost-aware generation) rather than as an abstract topic.
 
 ## Stack
-TypeScript · React · Node.js/Express · MongoDB · PostgreSQL (Supabase) · Redis · Stripe · AWS · Docker
+
+**Backend:** Node.js · Express · TypeScript · PostgreSQL · MongoDB · Prisma · Mongoose · Redis · Socket.io · Zod  
+**Frontend:** React · Next.js · TypeScript · Tailwind CSS · SCSS · Zustand · TanStack Query · GSAP · Vite  
+**Tools & Infra:** Stripe · OpenAI · Anthropic · Supabase · Docker · AWS (Amplify · S3 · Lambda) · Vercel · Railway · Render · Route 53 · Git · GitHub · Vitest · Postman
 
 ## Socials
 
 <p align="left">
-<a href="https://www.github.com/alcrro" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a>
-<a href="https://www.linkedin.com/in/alexandru-roventa/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
+<a href="https://github.com/Alcrro" target="_blank" rel="noreferrer">GitHub</a> ·
+<a href="https://www.linkedin.com/in/alexandru-roventa/" target="_blank" rel="noreferrer">LinkedIn</a>
 </p>
-
----
-
-## GitHub Stats
-
-<a href="http://www.github.com/alcrro"><img src="https://github-readme-stats-virid-nine-53.vercel.app/api?username=alcrro&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="alcrro's GitHub stats" /></a>
-
-<a href="http://www.github.com/alcrro"><img src="https://github-readme-streak-stats.herokuapp.com/?user=alcrro&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
-
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=alcrro&bg_color=1c1917&color=0891b2&line=0891b2&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-<a href="https://github.com/alcrro" align="left"><img src="https://github-readme-stats-virid-nine-53.vercel.app/api/top-langs/?username=alcrro&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20Languages" alt="Top Languages" /></a>
