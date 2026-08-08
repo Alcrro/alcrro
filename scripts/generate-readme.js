@@ -74,6 +74,16 @@ ${skillLine}
 <a href="${github(basics.profiles)}" target="_blank" rel="noreferrer">GitHub</a> ·
 <a href="${linkedin(basics.profiles)}" target="_blank" rel="noreferrer">LinkedIn</a>
 </p>
+
+## GitHub Stats
+
+<a href="${github(basics.profiles)}"><img src="https://github-readme-stats-virid-nine-53.vercel.app/api?username=alcrro&show_icons=true&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true" alt="alcrro's GitHub stats" /></a>
+
+<a href="${github(basics.profiles)}"><img src="https://github-readme-streak-stats.herokuapp.com/?user=alcrro&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="alcrro's streak stats" /></a>
+
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=alcrro&bg_color=1c1917&color=0891b2&line=0891b2&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<a href="${github(basics.profiles)}"><img src="https://github-readme-stats-virid-nine-53.vercel.app/api/top-langs/?username=alcrro&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true" alt="Top Languages" /></a>
 `;
 
 fs.writeFileSync(outPath, md);
