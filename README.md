@@ -1,10 +1,10 @@
 <h1>Hi there, I'm Alexandru Roventa 👋</h1>
 
-Full-Stack Developer · SaaS Products · AI Integration — Tarju Jiu, Romania
+Full-Stack Developer · SaaS Products · AI Integration — Satu Mare, Romania
 
 Full-stack developer building and shipping SaaS products end-to-end, independently. Currently running two active products: LearnNoir, an EdTech platform with AI-generated lesson content for schools, and ApexFitness, a gym management SaaS. Open to freelance or remote full-stack roles.
 
-- 🌍 Based in **Tarju Jiu, Romania**
+- 🌍 Based in **Satu Mare, Romania**
 - 🖥️ Portfolio: [alexandru-roventa.ro](https://alexandru-roventa.ro)
 - 📫 Contact: [alex.roventa94@gmail.com](mailto:alex.roventa94@gmail.com)
 - 🎯 Open to freelance / remote full-stack work
