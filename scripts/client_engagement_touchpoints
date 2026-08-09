@@ -1,0 +1,96 @@
+{
+  "template": "client-project-touchpoints",
+  "description": "Puncte de contact recurente într-un proiect client, de la primul call la relația post-livrare. Switch-ul tehnic/non-tehnic e declanșat de tipul de interacțiune, nu de o fază unică.",
+  "touchpoints": [
+    {
+      "id": 1,
+      "name": "Discovery",
+      "type": "non-technical",
+      "goal": "Înțelegi problema reală a clientului, nu soluția pe care crede el că o vrea.",
+      "questions": [
+        "Ce se întâmplă acum, fără aplicație, care nu funcționează?",
+        "Ce te-a făcut să cauți acum o soluție?",
+        "Dacă problema asta nu s-ar rezolva, ce se întâmplă?",
+        "Cine folosește efectiv aplicația?",
+        "Ce nivel de skill digital au utilizatorii?",
+        "Peste 6 luni, de unde știi că a meritat investiția?",
+        "Ce buget ai alocat, aproximativ?",
+        "Ai un deadline fix sau e flexibil?",
+        "Ai mai încercat ceva înainte și de ce nu a mers?"
+      ],
+      "avoid": [
+        "Ce funcționalități vrei?",
+        "Ce stack preferi?",
+        "Ce design îți place?"
+      ],
+      "skills": ["ascultare activă", "extragere de cerințe fără ancorare în soluție"]
+    },
+    {
+      "id": 2,
+      "name": "Ofertă / Scope",
+      "type": "non-technical",
+      "goal": "Traduci cerința vagă în livrabile concrete, preț și termen.",
+      "actions": [
+        "Rezumi problema cu propriile cuvinte și ceri confirmare",
+        "Definești MVP scope explicit (ce intră, ce NU intră)",
+        "Estimezi preț și termen pe baza scope-ului definit"
+      ],
+      "skills": ["negociere", "claritate în scris", "estimare realistă"]
+    },
+    {
+      "id": 3,
+      "name": "Contract / Acord",
+      "type": "non-technical",
+      "goal": "Formalizezi scope, plată, IP ownership, termene — înainte de orice cod scris.",
+      "actions": [
+        "Scope-ul din ofertă devine anexă contractuală",
+        "Termeni de plată (avans, tranșe, final)",
+        "Cine deține codul/IP la finalizare",
+        "Ce se întâmplă la scope creep (cerințe noi apărute pe parcurs)"
+      ],
+      "skills": ["protecție legală de bază", "claritate contractuală"],
+      "note": "Cel mai des omis pas de devi. Lipsa lui e principala sursă de conflicte cu clienții."
+    },
+    {
+      "id": 4,
+      "name": "Build",
+      "type": "technical",
+      "goal": "Execuție tehnică pură.",
+      "skills": ["development"]
+    },
+    {
+      "id": 5,
+      "name": "Update-uri pe parcurs",
+      "type": "non-technical",
+      "goal": "Traduci progresul tehnic în limbaj de business.",
+      "example": "Nu: 'am refactorizat middleware-ul'. Da: 'e gata modulul de plăți, urmează rezervările'.",
+      "skills": ["traducere tehnic -> business"]
+    },
+    {
+      "id": 6,
+      "name": "Testare / Acceptanță client (UAT)",
+      "type": "non-technical",
+      "goal": "Clientul testează și acceptă formal înainte de lansare — nu vede produsul finit prima dată la launch.",
+      "actions": [
+        "Livrezi build pe mediu de staging",
+        "Clientul testează pe baza scope-ului din contract",
+        "Semnezi acceptanța sau colectezi lista de corecții"
+      ],
+      "skills": ["management de așteptări", "documentare de bug-uri/feedback"]
+    },
+    {
+      "id": 7,
+      "name": "Launch / Poziționare",
+      "type": "non-technical",
+      "goal": "Nu mai vorbești cu un client, vorbești cu o piață.",
+      "skills": ["marketing", "SEO", "mesaj de poziționare"]
+    },
+    {
+      "id": 8,
+      "name": "Suport post-livrare",
+      "type": "non-technical",
+      "goal": "Relație lungă, nu vânzare.",
+      "skills": ["comunicare pe termen lung", "identificare de oportunități de upsell/retainer"]
+    }
+  ]
+}
